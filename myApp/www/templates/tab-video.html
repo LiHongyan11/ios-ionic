@@ -1,0 +1,27 @@
+<ion-view title="播放" class='videoPlay'>
+    <ion-header-bar align-title="center" class="info-header">
+        <div class="buttons">
+            <a class="button icon-left ion-chevron-left button-clear button-dark button-self" onclick="javascript:history.back();"><span>返回</span></a>
+
+        </div>
+        <h1 class="title">{{curriculumName}}</h1>
+    </ion-header-bar>
+    <ion-content class='playList'>
+        <div class="plays">
+            <div id="myElement">
+                <img ng-src="{{'http://23981515.com:80'+live.closePicture}}" ng-hide='{{show}}'>
+            </div>
+        </div>
+        <div class="buttons">
+            <a class="button button-small" href="javascript:void(0);" ng-repeat='route in live.routes' value='{{route.value}}'>{{route.name}}</a>
+        </div>
+        <div class="ask">
+            <form name="question" class="row" style="float:left">
+                <textarea contentEditable='true' class="col col-80 areaBox" ng-model='askCtn.ctn' required style="float:left"></textarea>
+                <button class="col button button-energized" ng-click='askQuestion(askCtn)' ng-disabled="!question.$valid"style='float:left;width:18%'>
+                    提问
+                </button>
+            </form>
+        </div>
+    </ion-content>
+</ion-view>

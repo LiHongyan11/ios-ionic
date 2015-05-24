@@ -1,0 +1,54 @@
+<ion-view class='orderInfo'>
+	<ion-header-bar align-title="center" class="info-header">
+        <div class="buttons">
+            <a class="button icon-left ion-chevron-left button-clear button-dark button-self" onclick="javascript:history.back();"><span>返回</span></a>
+
+        </div>
+        <h1 class="title">订单信息</h1>
+    </ion-header-bar>
+    <ion-content class='orderInfoCtn'>
+        <h4>填写核对订单</h4>
+        <div class="infos padding">
+        	<h6>购买者信息</h6>
+        	<form name='info'>
+		        <div class="item item-input">
+		    		<span class='input-label'>真实姓名:</span>
+		    		<input type="text" required ng-model='infos.realName'>
+		    	</div>
+		    	<div class="item item-input">
+		    		<span class='input-label'>手机号码:</span>
+		    		<input type="text" required ng-model='infos.phone'>
+		    	</div>
+	    	</form>
+	    	<h6>订单号码:{{infos.orderId}}</h6>
+	    	<table>
+	    		<thead>
+		    		<tr class="row">
+		    			<th class="col col-50">商品</th>
+		    			<th class="col">价格(元)</th>
+		    			<th class="col">时长(月)</th>
+		    		</tr>    			
+	    		</thead>
+	    		<tbody>
+	    			<tr class="row" ng-repeat='info in infos.goodForms'>
+	    				<td class="col col-50">{{info.name}}</td>
+	    				<td class="col">{{info.price}}</td>
+	    				<td class="col">{{info.belong}}</td>
+	    			</tr>
+	    		</tbody>
+	    	</table>
+	    	<h6>支付方式</h6>
+	    	<label class="item">
+	    		<input type="radio" checked>
+	    		<img src="img/alipay.jpg">
+	    	</label>
+        </div>
+        
+    </ion-content>
+    <ion-footer-bar class='orderInfoFoot'>
+    	<div class="allPrice">
+    		价格总计:<span>￥{{infos.total_fee | number:2}}</span>
+    	</div>
+    	<button ng-click='pay()'>立即支付</button>
+    </ion-footer-bar>
+</ion-view>

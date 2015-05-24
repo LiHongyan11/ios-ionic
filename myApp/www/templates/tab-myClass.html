@@ -1,0 +1,23 @@
+ <ion-view title="我的课程" class="myClass">
+    <ion-header-bar align-title="center" class="info-header">
+        <div class="buttons">
+            <a class="button icon-left ion-chevron-left button-clear button-dark button-self" href="#/tab/myaccount"><span>返回</span></a>
+        </div>
+        <h1 class="title">我的课程</h1>
+    </ion-header-bar>
+    <div class="row infoTip">
+        <div class="col col-50" ng-class="{activaty:$state.includes('tab.myClass.myClassList')}">
+          <i class="icon ion-left ion-person"></i>
+          <a href="#/tab/myClass/myClassList">我的课程</a>
+        </div>
+        <div class="col" ng-class="{activaty:$state.includes('tab.myClass.myOverClass')}">
+          <i class="icon ion-left ion-ios7-clock-outline"></i>
+          <a href="#/tab/myClass/myOverClass">过期课程</a>
+        </div>
+    </div>
+    <ion-content id="element" style="margin-top:74px;" scroll="false" on-swipe-left="onSwipeLeft()" on-swipe-right="onSwipeRight()">
+      <ion-nav-view name="myClass-myClassList" animation="no-animation">
+
+      </ion-nav-view>
+    </ion-content>  
+</ion-view>

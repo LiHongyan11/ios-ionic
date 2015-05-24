@@ -1,0 +1,32 @@
+<ion-view class='result'>
+    <ion-header-bar align-title="center" class="info-header">
+        <div class="buttons">
+            <a class="button icon-left ion-chevron-left button-clear button-dark button-self" name="tab-mesCent" onclick="javascript:history.back();">
+                <span>返回</span>
+            </a>
+
+        </div>
+        <h1 class="title">查询结果</h1>
+    </ion-header-bar>
+    <ion-content class='queryResult'>
+        
+        <div class="item item-thumbnail-left" ng-repeat='key in result'>
+            <img ng-src="{{'http://23981515.com:80'+key.img}}">
+            <h2>{{key.name}}</h2>
+            <span ng-class="{'other':key.appPrice==0}">{{key.price}}原价</span>
+            <br>
+            <span ng-hide="key.appPrice==0" class='other'>{{key.appPrice}}特价</span>
+            <br>
+            <a ng-click='addShopCart(key.alias)'>加入购物车</a>
+        </div>
+        <ion-refresher pulling-text="下拉加载数据" refreshing-text="加载中...." on-refresh="doRefresh()">
+        </ion-refresher>
+        <!-- <ion-infinite-scroll
+    on-infinite="loadMore()"
+    distance="1%">
+  </ion-infinite-scroll> -->
+
+
+
+    </ion-content>
+</ion-view>

@@ -1,0 +1,40 @@
+
+a{
+	text-decoration: none;
+}
+body{
+	font-family: '微软雅黑';
+}
+.alert-danger{
+	color: #fc1739;
+}
+.displayHide{
+	display: none;
+}
+.tab-item.tab-item-active{
+	background: #fff;
+	color: rgb(243,108,19);
+}
+ion-nav-view{
+	background: #fff;
+}
+/*=====底部导航=====*/
+.tabs-icon-left.tabs .tab-item .icon:before, .tabs-icon-left > .tabs .tab-item .icon:before, .tabs-icon-right.tabs .tab-item .icon:before, .tabs-icon-right > .tabs .tab-item .icon:before{
+	font-size: 16px;
+	font-weight: bold;
+}
+.bar .button.button-clear .icon:before, .bar .button.button-clear.icon:before, .bar .button.button-clear.icon-left:before, .bar .button.button-clear.icon-right:before{
+	font-size: 16px;
+}
+a.button .icon:before, a.button.icon:before, a.button.icon-left:before, a.button.icon-right:before{
+	margin-top: 0px;
+}
+.tabs a{
+	background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), color-stop(0.3, #e2e2e2), to(#ada9a9));
+	-webkit-box-shadow: inset 1px 1px 4px #bbbaba;
+}
+.tabs a span{
+	display: inline-block;
+	margin-top: 2px;
+}
+/*=====底部导航结束=====*/

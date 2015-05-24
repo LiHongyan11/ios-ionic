@@ -1,0 +1,22 @@
+ <ion-view title="消息中心" class='mesCent'>
+    <ion-header-bar align-title="center" class="info-header">
+        <div class="buttons">
+            <a class="button icon-left ion-chevron-left button-clear button-dark button-self" onclick="javascript:history.back();"><span>返回</span></a>
+        </div>
+        <h1 class="title">消息中心</h1>
+    </ion-header-bar>
+    <div class="row infoTip">
+        <div class="col col-50" ng-class="{activaty:$state.includes('tab.mesCent.notRead')}">
+          <i class="icon ion-left ion-person"></i>
+          <a href="#/tab/mesCent/notRead"><span>未读消息</span></a>
+        </div>
+        <div class="col" ng-class="{activaty:$state.includes('tab.mesCent.isRead')}">
+          <i class="icon ion-left ion-ios7-clock-outline"></i>
+          <a href="#/tab/mesCent/isRead"><span>已读消息</span></a>
+        </div>
+    </div>
+    <ion-content on-swipe-left="onSwipeLeft()" on-swipe-right="onSwipeRight()" style="margin-top:74px;" scroll="false">
+      <ion-nav-view name="mesCent-ReadList" animation="no-animation"></ion-nav-view>
+    </ion-content>
+</ion-view>
+

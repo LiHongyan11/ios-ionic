@@ -1,0 +1,27 @@
+<ion-view title="结算" class='shopCart'>
+	<ion-header-bar align-title="center" class="info-header">
+        <div class="buttons">
+            <a class="button icon-left ion-chevron-left button-clear button-dark button-self" onclick="javascript:history.back();"><span>返回</span></a>
+
+        </div>
+        <h1 class="title">购物车</h1>
+        <a href="#/balance" class="button button-clear" ng-click='clear()'>清空购物车</a>
+    </ion-header-bar>
+	<ion-content class="settleAct">
+	     <!-- <div class="alert alert-info" ng-if="!shopping.length">请先添加课程</div> -->
+	    <div class="item item-thumbnail-left" ng-repeat="item in data">
+	      <img ng-src="{{'http://23981515.com:80'+item.img}}">
+	      <h2>{{item.name}}<br><br>
+	      <span>{{item.time}}月课程</span></h2>
+	      <span ng-hide="item.appPrice==0" class='other price'>￥{{item.appPrice}}</span>
+	      <br>
+	      <button type="button" ng-click="incrementQuantity($index)">x{{item.belong}}</button>
+	      <br><br>
+	      <span class='original'>原价{{item.price}}</span>
+	    </div>
+	</ion-content>
+	<ion-footer-bar class='shopCartFoot'>
+		<span>￥{{total | number:2}}</span>
+		<a class="icon ion-ios7-cart-outline" ng-click="balance()">结算</a>
+	</ion-footer-bar>
+</ion-view>

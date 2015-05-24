@@ -1,0 +1,17 @@
+
+<ion-view class="slide-left-right">
+    <ion-content class="orderDetail notPay">
+        <accordion1>
+            <expander1 aa="unPay.orderNumber" bb="unPay.createTime" cc="unPay.totalPrice" ng-repeat='unPay in unPays'>
+                <div ng-repeat='expander in unPay.courses' class="item item-thumbnail-left">
+                    <img ng-src="{{'http://23981515.com:80'+expander.img}}">
+                    <h2>{{expander.name}}<br><br>
+                        <span>{{expander.dataTime}}</span>
+                    </h2>
+                    <span class='original'>原价{{expander.oldPrice}}</span>
+                    <span class='price'>￥{{expander.bargainPrice}}</span>
+                </div>
+            </expander1>
+        </accordion1>
+    </ion-content>
+</ion-view>

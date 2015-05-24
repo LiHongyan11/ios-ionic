@@ -1,0 +1,802 @@
+*{margin:0;padding:0}
+a{
+    text-decoration: none;
+}
+#cnivi{width:100%;font-family:"Microsoft YaHei","微软雅黑",tahoma,arial,simsun,"宋体";font-size:14px;position:relative}
+#ceit-g-bd{width:100%;margin:0 auto}
+/* 订单信息 */
+.m-myOrder .m-ordTitle {
+
+}
+
+.m-ordTitle h2, .m-cartTitle h2 {
+    height: 32px;
+    line-height: 32px;
+    margin:15px;
+    font-size: 24px;
+    color: #0f62ae;
+    padding-left: 40px;
+    text-align: center;
+}
+
+.flow {
+    float: right;
+}
+
+.flow li {
+    float: left;
+    width: 120px;
+    text-align: center;
+    height: 32px;
+    line-height: 32px;
+    padding: 0 30px 0 8px;
+    background-color: #eee;
+    position: relative;
+}
+
+.m-ordTitle li.current,
+.m-cartTitle li.current {
+    background-color: #0d4a86;
+    color: #fff;
+}
+
+.m-ordInfo h3 {
+    width: 100%;
+    height: 30px;
+    line-height: 32px;
+    padding-left: 15px;
+    background-color: #f3f3f3;
+    border-bottom: 2px solid #d0d0d0;
+}
+
+.m-ordInfo .userInfo h4 {
+    margin: 10px 10px 0;
+    height: 35px;
+    line-height: 35px;
+    font-size: 14px;
+    border-bottom: 1px dashed #ddd;
+}
+
+.m-ordInfo .inputInfo {
+    margin-left: 15px;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.m-ordInfo .inputInfo label {
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    margin-bottom: 10px;
+}
+
+.m-ordInfo .inputInfo input {
+    height: 22px;
+    line-height: 22px;
+    border: 1px #d1d1d1 solid;
+    padding: 3px 5px;
+    font-size: 14px;
+}
+
+.m-ordInfo .saveBtn {
+    margin: 20px 75px;
+    display: block;
+    width: 120px;
+    height: 35px;
+    line-height: 35px;
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    background: #4171b8;
+}
+
+.m-ordInfo .buyWay {
+    margin: 0 10px;
+}
+
+.m-ordInfo .alipay {
+    background-color: #fffbe0;
+    padding-top:24px;
+    border-bottom: 1px solid #fdbf8c;
+}
+
+.m-ordInfo .alipay img {
+    width: 126px;
+    height: 36px;
+    border: 3px #1280cd solid;
+    vertical-align: middle;
+    margin-right:15px;
+}
+/*中国农业
+
+
+*/
+.m-ordInfo .alipay span{
+    width: 126px;
+    height: 36px;
+    vertical-align: middle;
+    margin-right:10px;
+
+    display: inline-block;
+    _display:inline;
+    zoom:1;
+    background-image:url(/static/images/allcombo.png) ;
+}
+.m-ordInfo .alipay span.BOCB2C{
+    background-position: 0 -36px;
+}
+.m-ordInfo .alipay span.ICBCB2C{
+    background-position: 0 -756px;
+}
+.m-ordInfo .alipay span.CMB {
+    background-position: 0 -396px;
+}
+.m-ordInfo .alipay span.CCB {
+    background-position: 0 -252px;
+}
+.m-ordInfo .alipay span.ABC {
+    background-position: 0 -0px;
+}
+.m-ordInfo .alipay span.SPDB {
+    background-position: 0 -972px;
+}
+/*2*/
+.m-ordInfo .alipay span.CIB {
+    background-position: 0 -324px;
+}
+.m-ordInfo .alipay span.GDB {
+    background-position: 0 -576px;
+}
+.m-ordInfo .alipay span.CMBC {
+    background-position: 0 -432px;
+}
+.m-ordInfo .alipay span.CITIC {
+    background-position: 0 -360px;
+}
+.m-ordInfo .alipay span.HZCBB2C {
+    background-position: 0 -1044px;
+}
+.m-ordInfo .alipay span.CEBBANK {
+    background-position: 0 -288px;
+}
+/*3*/
+.m-ordInfo .alipay span.COMM-DEBIT {
+    background-position: 0 -468px;
+}
+.m-ordInfo .alipay span.BJBANK {
+    background-position: 0 -1008px;
+}
+.m-ordInfo .alipay span.WZCBB2C-DEBIT {
+    background-position: 0 -1080px;
+}
+.m-ordInfo .alipay span.SHBANK {
+    background-position: 0 -1116px;
+}
+.m-ordInfo .alipay span.NBBANK {
+    background-position: 0 -1152px;
+}
+.m-ordInfo .alipay span.BJRCB {
+    background-position: 0 -396px;
+}
+/*4*/
+.m-ordInfo .alipay span.FDB {
+    background-position: 0 -396px;
+}
+.m-ordInfo .alipay span.POSTGC {
+    background-position: 0 -828px;
+}
+/*5*/
+.m-ordInfo .alipay span.ABCBTB,
+.m-ordInfo .alipay span.ICBCBTB,
+.m-ordInfo .alipay span.CCBBTB
+, .m-ordInfo .alipay span.SPDBB2B ,
+.m-ordInfo .alipay span.BOCBTB,
+.m-ordInfo .alipay span.CMBBTB {
+    background-image:url(../images/companylogo.png);
+    width:220px;
+}
+.m-ordInfo .alipay span.ABCBTB {
+    background-position: 0 -0px;
+}
+.m-ordInfo .alipay span.ICBCBTB {
+    background-position: 0 -36px;
+}
+.m-ordInfo .alipay span.CCBBTB {
+    background-position: 0 -72px;
+}
+.m-ordInfo .alipay span.SPDBB2B {
+    background-position: 0 -108px;
+}
+.m-ordInfo .alipay span.BOCBTB {
+    background-position: 0 -172px;
+}
+.m-ordInfo .alipay span.CMBBTB {
+    background-position: 0 -140px;
+}
+.m-ordInfo .alipay p{
+    margin-left:35px;
+    margin-bottom:24px;
+}
+
+/*.m-ordInfo .alipay a {
+
+    margin: 24px 35px;
+}*/
+
+.m-ordInfo .allPay {
+    background-color: #fafafa;
+    padding: 24px;
+    margin-bottom: 30px;
+}
+
+.m-ordInfo .allPay li {
+    float: left;
+    margin: 0 11px 10px;
+    display: inline;
+    padding: 2px;
+    width: 126px;
+    height: 36px;
+    border: 1px #e5e5e5 solid;
+    background: #fff;
+    position: relative;
+}
+
+.m-ordInfo .allPay li:hover {
+    border-color: #1280cd;
+}
+
+.sumPrice {
+    margin-top: 30px;
+    text-align: right;
+    background-color: #f3f3f3;
+    font-size: 28px;
+    color: #c00;
+    padding: 10px 10px 10px 0;
+    border-bottom: 1px solid #d4d4d4;
+}
+
+.m-myCart .sumPrice {
+    margin-top: -1px;
+}
+
+.sumPrice p {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    margin-left: 10px;
+    vertical-align: middle;
+}
+
+.sumPrice span {
+    font-size: 14px;
+    color: #333;
+    font-weight: 700;
+    vertical-align: middle;
+}
+
+.sumPrice a {
+    margin-left: 15px;
+    display: inline-block;
+    padding: 0 10px;
+    height: 35px;
+    line-height: 35px;
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+    background-color: #f60;
+}
+
+/* 结算中心 */
+.tips {
+    float: left;
+    margin-top: 130px;
+    margin-left: 30px;
+    font-size: 14px;
+    font-weight: bold;
+    height: 30px;
+    line-height: 30px;
+}
+
+.tips a {
+    color: #2b9ad2;
+    margin-left: 9px;
+}
+
+.empty {
+    padding: 100px 0 200px 300px;
+    float: left;
+}
+
+.m-cartTitle {
+    margin: 30px 0;
+}
+
+.m-goodInfo table {
+    width: 1024px;
+    margin: 0 auto;
+}
+
+.m-goodInfo thead tr {
+    height: 30px;
+    background-color: #f3f3f3;
+}
+
+.m-goodInfo thead th {
+    text-align: center;
+    border-bottom: 2px solid #d1d1d1;
+}
+
+.m-goodInfo .goods {
+    width: 460px;
+}
+
+.m-goodInfo .prices {
+    width: 220px;
+}
+
+.m-goodInfo .agree {
+    width: 200px;
+}
+
+.m-goodInfo .check {
+    width: 140px;
+}
+
+.m-goodInfo tbody tr {
+    border-bottom: 1px dashed #d0d0d0;
+}
+
+.m-goodInfo .good {
+    float: left;
+    padding: 20px;
+}
+
+.m-goodInfo tbody tr td {
+    text-align: center;
+}
+
+.m-goodInfo .good img {
+    height: 60px;
+    width: 84px;
+}
+
+.goodInfo {
+    float: left;
+    padding: 20px 10px 20px 0;
+    font-size: 14px;
+    line-height: 20px;
+    width: 326px;
+    text-align: left;
+}
+
+.m-goodInfo .goodInfo p {
+    color: #999b98;
+}
+
+.goodInfo a {
+    font-weight: bold;
+    color: #000;
+}
+
+.m-goodInfo .agreement a {
+    text-decoration: underline;
+    color: #05a;
+    font-weight: bold;
+    vertical-align: bottom;
+    _vertical-align: middle;
+}
+
+.m-goodInfo .agreement input {
+    vertical-align: bottom;
+    _vertical-align: middle;
+}
+
+.m-goodInfo .singlePrice span {
+    display: block;
+    padding: 0 8px;
+    height: 23px;
+    line-height: 23px;
+    font-weight: 700;
+    color: #fff;
+    background: #0d4a86;
+    margin-top: 10px;
+}
+
+.m-totalPrice {
+    border-top: 1px solid #d0d0d0;
+    margin-top: -1px;
+    height: 64px;
+    background-color: #ededed;
+}
+
+.sumPrice .fl {
+    float: left;
+    background-color: #0d4a86;
+    margin-left: 0;
+}
+
+/* 个人中心子页 */
+.m-userInfo .thisItem {
+    background-color: #e1e1e1;
+}
+
+.m-formInfo {
+    width: 500px;
+    margin: 30px 100px;
+}
+
+.field {
+    vertical-align: top;
+}
+
+.field label {
+    width: 150px;
+    margin: 15px 0;
+    display: inline-block;
+    text-align: right;
+    width: 70px;
+    vertical-align: middle;
+    font-weight: bold;
+}
+
+.field input {
+    border: 1px solid #ddd;
+    height: 22px;
+    line-height: 22px;
+    margin: 0;
+    margin-right: 3px;
+    padding: 3px;
+    vertical-align: middle;
+    border-radius: 2px 2px;
+    width: 220px;
+}
+
+.sex input {
+    width: 14px;
+    margin: 0 2px 0 6px;
+}
+
+.sex .girl,
+.sex .boy {
+    width: 12px;
+    font-weight: normal;
+}
+
+.submit {
+    margin-left: 74px;
+    margin-top: 10px;
+}
+
+.submit input {
+    width: 100px;
+    height: 28px;
+    line-height: 28px;
+    border: none;
+    background-color: #ff4400;
+    color: #fff;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.m-passwd .field label {
+    width: 150px;
+    margin: 15px 0;
+}
+
+.m-passwd .submit {
+    margin-left: 154px;
+}
+
+.m-passwd .m-formInfo {
+    margin: 30px;
+}
+
+.m-msgItem .msgPic,
+.m-talk .talkPic {
+    height: 50px;
+    width: 50px;
+    overflow: hidden;
+    border: 3px solid #fff;
+    margin: 5px 10px;
+    float: left;
+    display: inline;
+}
+
+.m-msgItem .msgInfo,
+.m-talk .talkInfo {
+    float: left;
+    width:100%;
+    padding: 10px 0;
+}
+
+.m-msgItem .msgInfo input {
+    vertical-align: middle;
+    margin-left: 5px;
+}
+
+.m-msgItem .msgInfo a {
+    color: #2b9ad2;
+    font-weight: bold;
+    vertical-align: middle;
+}
+
+.m-msgItem .msgInfo p,
+.m-talk .talkInfo p {
+    margin-left: 5px;
+    font-size: 12px;
+    word-warp: break-word;
+    word-break: break-all;
+    display: inline-block;
+    margin-top: 5px;
+    width: 675px;
+}
+.m-msgItem .msgInfo p{
+    width:100%;
+}
+.m-msgItem,
+.m-talk {
+    padding: 10px;
+    border-bottom: 1px dashed #ddd;
+    margin: 0 ;
+}
+
+.m-msgItem .fullMsg {
+    text-align: right;
+    margin-top: 10px;
+}
+
+.m-msgItem .fullMsg b {
+    margin-left: 8px;
+    vertical-align: middle;
+}
+
+.m-msgItem .fullMsg a {
+    margin-left: 8px;
+    color: #369;
+}
+
+.m-talk .talkInfo a {
+    color: #2b9ad2;
+    font-weight: bold;
+}
+
+.m-talk .talkInfo span {
+    text-align: right;
+}
+
+.m-delete {
+    text-align: right;
+    margin: 20px 30px;
+}
+
+.m-delete span {
+    margin-left: 5px;
+}
+
+.m-delete a,
+.continue,
+.sbtMsg {
+    margin-left: 15px;
+    display: inline-block;
+    padding: 0 16px;
+    height: 25px;
+    text-align: center;
+    line-height: 25px;
+    color: #fff;
+    background-color: #ff4400;
+}
+
+.m-talk .time {
+    margin-right: 10px;
+}
+
+.m-orderTab,
+.m-classTab {
+    margin: 0 24px;
+}
+
+.m-orderTab .orderNav,
+.m-classTab .classNav {
+    margin-bottom: 10px;
+    margin-top: 20px;
+    padding-left: 5px;
+    line-height: 30px;
+    border-bottom: 1px solid #CDCDCD;
+}
+
+.m-orderTab .orderNav li,
+.m-classTab .classNav li {
+    float: left;
+    margin: 0 3px -1px 0;
+}
+
+.m-orderTab .orderNav a,
+.m-classTab .classNav a {
+    display: block;
+    padding: 0 10px;
+    border: 1px solid #CDCDCD;
+    background: #0d4a86;
+    color: #fff;
+}
+
+.m-orderTab .active a,
+.m-classTab .active a {
+    background-color: #fff;
+    color: #000;
+    border-bottom: 1px solid #fff;
+}
+
+.m-orderTab .orderHead {
+    background: #f2f2f2;
+    color: #333;
+    height: 30px;
+    line-height: 30px;
+    border-bottom: 1px #cdcdcd solid;
+    width: 100%;
+    text-align: center;
+}
+
+.m-orderTab .goods {
+    width: 300px;
+}
+
+.m-orderTab .prices {
+    width: 150px;
+}
+
+.m-orderTab .dataTime {
+    width: 200px;
+}
+
+.m-orderTab .statues {
+    width: 140px;
+}
+
+.m-orderTab .orderContent {
+    margin-top: 20px;
+}
+
+.m-orderTab .orderContent table {
+    width: 100%;
+    border: 1px solid #ddd;
+    margin-bottom: 30px;
+}
+
+.m-orderTab .orderContent thead th {
+    padding-left: 20px;
+    background-color: #eee;
+}
+
+.m-orderTab .orderContent thead span {
+    margin-right: 20px;
+}
+
+.m-orderTab .orderContent tr,
+.m-orderTab .orderContent td {
+    height: 30px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+.m-orderTab .goods .goodInfo {
+    width: 198px;
+    font-size: 12px;
+    padding: 10px 10px 10px 0;
+}
+
+.m-orderTab .good {
+    float: left;
+    padding: 10px;
+}
+
+.m-orderTab .good img {
+    width: 70px;
+    height: 50px;
+}
+
+.m-orderTab .oldPrice {
+    text-decoration: line-through;
+    display: block;
+    color: #bbb;
+    height: 20px;
+}
+
+.m-orderTab .countPrice {
+    text-align: right;
+    background-color: #eee;
+    height: 40px;
+    line-height: 40px;
+}
+
+.m-orderTab .countPrice b {
+    font-size: 20px;
+}
+
+.m-orderTab .countPrice span {
+    margin-right: 20px;
+}
+
+.m-orderTab .countPrice a {
+    margin-right: 20px;
+    font-weight: bold;
+    color: #0d4a86;
+}
+
+.m-orderTab .continue {
+    margin: 0;
+}
+.m-ordInfo .allGoods{
+    margin:15px;
+}
+.m-ordInfo .allGoods table {
+    width: 100%;
+    border: 1px solid #ddd;
+}
+
+.m-ordInfo .allGoods table th {
+    height: 30px;
+    background-color: #eee;
+    text-align: center;
+}
+
+.m-ordInfo .allGoods tbody tr {
+    height: 40px;
+    text-align: center;
+}
+
+.m-ordInfo .allGoods tbody td {
+    border-bottom: 1px dashed #ddd;
+}
+
+.m-ordInfo .goodName {
+    text-align: left;
+}
+
+.m-ordInfo .allGoods a {
+    margin-left: 10px;
+    color: #05a;
+}
+
+.m-ordInfo .allGoods .goods {
+    width: 60%;
+}
+
+.m-ordInfo .allGoods .prices {
+    width: 20%;
+}
+
+.m-ordInfo .allGoods .dataTime {
+    width: 20%;
+}
+
+.m-cartTitle h2 {
+    height: 32px;
+    line-height: 32px;
+    font-size: 24px;
+    color: #0f62ae;
+    text-align: center;
+    margin:15px;
+
+}
+
+/*订单支付完成页*/
+.m-payout{
+   margin-top:50px;
+}
+.succeed{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.sucpic,
+.suctip{
+    vertical-align: middle;
+}
+.suctip{
+    height: 78px;
+    line-height: 78px;
+    padding-left: 30px;
+    font-size: 25px;
+    font-weight: bold;
+    color: #0f62ae;
+}

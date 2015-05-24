@@ -1,0 +1,33 @@
+<ion-view title="Dashboard" class='dashboard'>
+	<div class="lTip2" ng-hide='kowns==true'>
+    	<span class="kown"><input type="checkbox" ng-click='kown()'>我知道了</span>
+    	<span><input type="checkbox" ng-click='never()'>下次不再提醒</span>
+	</div>
+	<ion-header-bar align-title="center" class="info-header">
+        <div class="buttons">
+            <a class="button icon-left ion-chatbubble-working button-clear button-dark button-self" ng-click='mes()'><span>消息</span><span class='num'>{{num}}</span></a>
+        </div>
+        <h1 class="title">融合视讯-课程表</h1>
+        <a href="#/login" class="button button-clear ion-person lTip1"></a>
+    </ion-header-bar>
+    <tab-slide-box>
+        <div class="tsb-icons">
+            <div class="tsb-ic-wrp timeBar">
+                <ion-scroll direction="x" class="tsb-hscroll col-30">
+                    <a href="javascript:;" class="" ng-repeat="time in times" on-finish-render="test()"><i class=""></i>{{time}}</a>
+                </ion-scroll>
+            </div>
+        </div>
+        <ion-slide-box show-pager="false" on-slide-changed="slideHasChanged($index)">
+            <ion-slide ng-repeat="dataTable in dataTables">
+                <div class="coursesList">
+                    <div ng-repeat="a in dataTable">
+                        <a href="" ng-click='play(a.curriculumAlias)'><img ng-src="{{'http://23981515.com:80'+a.curriculumImg}}"></a>
+                        <span ng-bind="a.curriculumTeacher"></span>
+                        <span>上课时间：{{a.curriculumTimeRange}}</span>
+                    </div>
+                </div>
+            </ion-slide>
+        </ion-slide-box>
+    </tab-slide-box>
+</ion-view>

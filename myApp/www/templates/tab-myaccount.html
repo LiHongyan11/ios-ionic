@@ -1,0 +1,50 @@
+ <!-- 个人中心 -->
+<ion-view title="个人中心" class='myAccount'>
+<!-- header-bar -->
+    <ion-header-bar align-title="center" class="info-header">
+        <div class="buttons">
+            <a class="button icon-left ion-chatbubble-working button-clear button-dark button-self" ng-click='mes()'><span>消息</span><span class='num'>{{num}}</span></a>
+        </div>
+        <h1 class="title" style="left:0">个人中心</h1>
+    </ion-header-bar>
+    <ion-content class="perCenter" ng-controller="MyAccountCtrl">
+	    <div class="slide-box" style='height:225px'>
+	    	<ion-slide-box ng-controller="MyAccountCtrl">
+			    <ion-slide ng-repeat='img in data'>
+			       <a class="box first" ng-href="{{img.url}}">
+			         <img ng-src="{{'http://23981515.com:80'+img.img}}">
+			       </a>
+			    </ion-slide>
+			    
+		    </ion-slide-box>
+		    <div class="login-info">
+		    	<span>{{real}}</span>
+		    </div>
+	    </div>	    
+		<div class="list detail-list" ng-controller='BoardCtrl'>
+		    <a class="item item-icon-right" ng-click='myOrder()'>
+			   我的订单
+	            <i class="icon ion-chevron-right"></i> 
+			</a>
+			<a class="item item-icon-right" ng-click="showPopup()">
+			   留言反馈
+	            <i class="icon ion-chevron-right"></i>
+			</a>
+			<a class="item item-icon-right" ng-click='changeInfo()'>
+			   资料修改
+	            <i class="icon ion-chevron-right"></i> 
+			</a>
+			<a class="item item-icon-right" ng-click='myClass()'>
+			   我的课程
+	            <i class="icon ion-chevron-right"></i> 
+			</a>
+			<a class="item item-icon-right" ng-click='message()'>
+			   消息中心
+	            <i class="icon ion-chevron-right"></i> 
+			</a>
+			<div class="btn">
+				<a class="login active" href="#/login" ng-click='cancel()'>{{state}}</a>
+			</div>
+			</div>		 
+    </ion-content>
+</ion-view>

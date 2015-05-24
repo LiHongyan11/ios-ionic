@@ -1,0 +1,12 @@
+<ion-view class="slide-left-right">
+  <ion-content class="myClassCtn">
+    <div class="coursesList">
+        <div ng-repeat='course in noOver'>
+          <a ng-click='lookCourse(course.alias)'><img ng-src="{{'http://23981515.com:80'+course.img}}"></a>
+          <span>{{course.name}}</span>
+          <span>至：{{course.endDate}}</span>
+          <a class="continue" ng-click='goOn(course.alias)'>续费</a>
+        </div>
+    </div>
+  </ion-content>
+  </ion-view>

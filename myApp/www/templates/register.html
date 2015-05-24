@@ -1,0 +1,73 @@
+<ion-view class='register'>
+	<ion-header-bar align-title="center" class="info-header">
+        <div class="buttons">
+            <a class="button icon-left ion-chevron-left button-clear button-dark button-self" onclick="javascript:history.back();"><span>返回</span></a>
+
+        </div>
+        <h1 class="title">注册会员</h1>
+    </ion-header-bar>
+    <ion-content class='registerCtn'>
+        <h4>欢迎注册融合视讯会员</h4>
+        <div class="col col-77 registerBox">
+            <form name="userForm" ng-submit="register(userData)" novalidate>
+                  <div class="item item-input">
+                      <span class='input-label'>*用户名:</span>
+                      <input type="text" name="username" ng-model='userData.username' ng-pattern="/^[a-zA-Z][a-zA-Z0-9_]+$/"  ng-minlength="3" ng-maxlength="8" placeholder="由字母、数字、下划线组成，以字母开头，3-8个字符" required/>
+                  </div>
+                  <div class="error" ng-show="userForm.username.$dirty && userForm.username.$invalid">
+                      <small ng-show="userForm.username.$error.required" class="help-block">用户名不能为空.</small>
+                      <small ng-show="userForm.username.$error.minlength || userForm.username.$error.maxlength" class="help-block">用户名由3-8个字符组成</small>
+                      <small ng-show="userForm.username.$error.pattern" class="help-block">由字母、数字、下划线组成.</small>
+                  </div>
+                  <div class="item item-input">
+                    <span class='input-label'>*密码:</span>
+                    <input type="password" name="password" placeholder="输入密码" ng-model="userData.password" ng-minlength="6" ng-maxlength="18" required ng-focus/>
+                  </div>
+                  <div class="error">
+                      <small ng-show="userForm.password.$error.minlength && !userForm.password.$focused" class="help-block">密码至少为6个字符.</small>
+                      <small ng-show="userForm.password.$error.maxlength && !userForm.password.$focused" class="help-block">密码长度不能大于18个字符.</small>
+                  </div>               
+                  <div class="item item-input">
+                    <span class='input-label'>*确认密码:</span>
+                    <input type="password" name="confirm_password" placeholder="请再次输入密码" ng-model="userData.password_verify" data-password-verify="userData.password" required ng-focus/>
+                  </div>
+                  <div class="error">
+                    <small ng-show="userForm.confirm_password.$error.passwordVerify && !userForm.confirm_password.$focused" class="help-block">两次输入的密码不一致.</small>
+                  </div>
+
+                  <div class="item item-input">
+                      <span class='input-label'>真实姓名:</span>
+                      <input type="text" name="realname" ng-model='userData.realname' value="">
+                  </div>
+                  <div class="item sex">
+                      <span class='input-label'>性别:</span>
+                      <div class="sexInput">
+                          <input type="radio" ng-value="0" name="sex" ng-model='userData.sex' value='0'>男
+                          <input type="radio" name="sex" ng-model='userData.sex' value='1'>女
+                      </div>
+                  </div>
+                  <div class="item item-input">
+                        <span class='input-label'>出生年月:</span>
+                        <input type="text" ng-model='userData.birthday' id='picker_1' date-picker=''>
+                  </div>
+                  <div class="item item-input">
+                      <span class='input-label'>手机号码:</span>
+                      <input type="text" name="phone" ng-maxlength="11" ng-model='userData.phone' ng-pattern=/^[0-9-+]+$/>
+                  </div>
+                  <div class="item item-input">
+                      <span class='input-label'>电子邮箱:</span>
+                      <input type="email" name="email" ng-model='userData.email' ng-focus>
+                      
+                  </div>
+                  <div class="error">
+                    <small ng-show="userForm.email.$invalid && userForm.email.$dirty && !userForm.email.$focused" class="help-block">邮箱格式不正确.</small>
+                  </div>
+                  <div class="item item-input">
+                      <span class='input-label'>QQ号码:</span>
+                      <input type="text" name="qqnumber" ng-model='userData.QQ' ng-pattern="/^[0-9]+$/">
+                  </div>
+                  <button type="submit" class="col col-80 col-offset-10" ng-disabled="!userForm.$valid">注册</button>           
+              </form>
+        </div>
+    </ion-content>
+</ion-view>

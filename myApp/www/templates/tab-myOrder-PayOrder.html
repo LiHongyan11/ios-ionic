@@ -1,0 +1,16 @@
+<ion-view class="slide-right-left">
+    <ion-content class="orderDetail isPay">
+        <accordion>
+            <expander ng-repeat="pay in pays" aa="pay.orderNumber" bb="pay.createTime">
+                <div ng-repeat='expander in pay.courses' class="item item-thumbnail-left">
+                    <img ng-src="{{'http://23981515.com:80'+expander.img}}">
+                    <h2>{{expander.name}}<br><br>
+                        <span>{{expander.dataTime}}</span>
+                    </h2>
+                    <span class='original'>原价{{expander.oldPrice}}</span>
+                    <span class='price'>￥{{expander.bargainPrice}}</span>
+                </div>
+            </expander>
+        </accordion>
+    </ion-content>
+</ion-view>

@@ -1,0 +1,24 @@
+<ion-view title="找课" class='findlessons'>
+    <ion-header-bar align-title="center" class="info-header">
+        <div class="buttons">
+           <a class="button icon-left ion-chatbubble-working button-clear button-dark button-self" ng-click='mes()'><span>消息</span><span class='num'>{{num}}</span></a>
+        </div>
+        <h1 class="title">找课程</h1>
+    </ion-header-bar>
+    <ion-content class='select-list'>
+        <div class="list">
+            <form>
+            	<label ng-repeat='character in data'>
+            		<span>{{character.catalogName}}:</span>
+            		<select ng-model='selected[$index]' ng-options='character.catalogAlias+":"+key.alias as key.tagName for key in character.tag'>
+            			<option value="">不限</option>
+            		</select>
+            	</label>
+            	<div class="btns">
+    	        	<input class="button" type='submit' value="查询" ng-click='find(selected)'>
+    	        	<input class="button" type="reset" value="重置">
+    	        </div>
+            </form>
+        </div>
+    </ion-content>
+</ion-view>

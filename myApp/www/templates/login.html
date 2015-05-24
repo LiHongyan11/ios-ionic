@@ -1,0 +1,44 @@
+<ion-view class='login'>
+	<ion-header-bar align-title="center" class="info-header">
+        <div class="buttons">
+            <a class="button icon-left ion-chevron-left button-clear button-dark button-self" onclick="javascript:history.back();"><span>返回</span></a>
+
+        </div>
+        <h1 class="title">会员登录</h1>
+    </ion-header-bar>
+    <ion-content class='row loginCtn'>
+        <div class="col col-70 loginBox">
+        	<a class="logo"></a>
+        	<form ng-submit="login(userData)" name="userForm"> 
+        		<div class="alert-danger displayHide"> 
+        			请输入账号和密码
+        		</div>
+        		<label class="item item-input">
+				    <i class="icon ion-ios7-person-outline placeholder-icon"></i>
+				    <input type="text" name='username' ng-model='userData.username' placeholder="账户" ng-pattern="/^[a-zA-Z][a-zA-Z0-9_]+$/"  ng-minlength="3" ng-maxlength="8" placeholder="由字母、数字、下划线组成，以字母开头，3-8个字符" required>
+				</label>
+                <div class="error" ng-show="userForm.username.$dirty && userForm.username.$invalid">
+                    <small ng-show="userForm.username.$error.required" class="help-block">用户名不能为空.</small>
+                    <small ng-show="userForm.username.$error.minlength || userForm.username.$error.maxlength" class="help-block">用户名由3-8个字符组成</small>
+                    <!-- <small ng-show="userForm.username.$error.maxlength" class="help-block">用户名太长.</small> -->
+                    <!-- <small ng-show="userForm.username.$error.unique" class="help-block">用户名重复.</small> -->
+                    <small ng-show="userForm.username.$error.pattern" class="help-block">由字母、数字、下划线组成.</small>
+                </div>
+				<label class="item item-input">
+				    <i class="icon ion-key placeholder-icon"></i>
+				    <input type="password" name="password" ng-model='userData.password' placeholder="密码" ng-minlength="6" ng-maxlength="18" required>
+				</label>
+                <div class="error" ng-show="userForm.password.$dirty && userForm.password.$invalid">
+                      <small ng-show="userForm.password.$error.minlength || userForm.password.$error.maxlength" class="help-block">密码为6-18个字符.</small>
+                      <small ng-show="userForm.password.$error.required" class="help-block">密码不能为空.</small>
+                </div>
+				<div class="buttons">
+					<button type='submit' ng-disabled="!userForm.$valid">登录</button>
+					<a href="#/protocol">注册</a>
+				</div>
+         	</form> 
+
+        	
+        </div>
+    </ion-content>
+</ion-view>

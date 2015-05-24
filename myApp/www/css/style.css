@@ -1,0 +1,945 @@
+/*=====找课程=====*/
+
+/*头部*/
+.info-header{
+	background: #f3f3f3;
+}
+.findlessons .info-header h1,.dashboard .info-header h1,.videoPlay .info-header h1,.result .info-header h1,.shopCart .info-header h1,.login .info-header h1,.protocol .info-header h1,.register .info-header h1,.checkPhone .info-header h1,.registerSuccess .info-header h1,.orderInfo .info-header h1,.mesCent .info-header h1,.myAccount .info-header h1,.myClass .info-header h1,.myOrder .info-header h1{
+	font-size: 14px;
+	font-weight: bold;
+}
+.info-header .buttons .button-self{
+	font-size: 14px;
+	color: #999999;
+}
+.info-header .buttons .button-self span{
+	color: #b64657;
+	font-size: 14px;
+}
+.info-header .buttons .button-self .num{
+	display: inline-block;
+	padding: 2px 5px;
+	min-height: 15px;
+	min-width: 15px;
+	border-radius: 50%;
+	background: #fc1739;
+	color:#fff;
+	line-height: 15px;
+	font-weight: bold;
+	margin-left: 2px;
+	font-size: 12px;
+}
+.info-header.buttons .title{
+	font-size: 16px;
+}
+/*头部结束*/
+
+/*内容部分*/
+.select-list{
+	width: 100%;
+	background: url(../img/bg4.jpg);
+}
+.select-list .list{
+	width: 250px;
+	margin: 0 auto;
+}
+.select-list .list label{
+	display: block;
+	margin-top: 20px;
+}
+.select-list .list label span{
+	display: inline-block;
+	width: 60px;
+	text-align: right;
+	font-size: 12px;
+}
+.select-list .list label select{
+	width: 180px;
+	height: 25px;
+	border-radius: 4px;
+	font-size: 12px;
+	border: none;
+	background: #eae7df;
+	text-align: center;
+}
+.select-list .list label select option{
+	background: #fff;
+}
+.select-list .list .btns{
+	margin-left: 60px;
+}
+
+.select-list .list .btns a,.select-list .list .btns input{
+	margin-top: 30px;
+	display: inline-block;
+	width: 90px;
+	min-height: 30px;
+	line-height: 30px;
+	background: #f45400;
+	border: 2px solid #e5e5e5;
+	border-radius: 20px;
+	color: #fff;
+	font-size: 12px;
+	font-weight: bold;
+}
+/*内容部分结束*/
+
+
+/*=====找课程结束=====*/
+
+
+/*=====首页=====*/
+
+/*头部*/
+.dashboard .info-header{
+	border-bottom: 1px solid #de781a;
+}
+.dashboard .info-header .lTip1{
+	display: inline-block;
+	float: right;
+	width: 32px;
+	height: 42px;
+	line-height: 42px;
+	margin-top: -4px;
+	border-left: 1px solid #adabab;
+}
+
+.dashboard .lTip2{
+	position: absolute;
+	float: right;
+	width: 120px;
+	height: 143px;
+	top: 25px;
+	right: 5px;
+	background: url(../img/aa.png) no-repeat;
+	z-index: 9999;
+}
+.dashboard .lTip2 span{
+	display: inline-block;
+	margin-left: 25px;
+	font-size: 12px;
+}
+
+.dashboard .lTip2 .kown{
+	margin-top: 75px;
+
+}
+
+/*头部结束*/
+
+/*内容部分*/
+
+
+
+.dashboard .timeBar {
+	margin-top: 40px;
+}
+.dashboard .timeBar a{
+	display: inline-block;
+	color: #383736;
+	font-size: 12px;
+	min-height: 40px;
+	line-height: 30px;
+}
+.dashboard .selected{
+	background: url(../img/aaa.png) no-repeat;
+}
+.timeBar .ion-ios7-clock-outline:before{
+	color: #fc1739;
+}
+.timeBar .ion-ios7-clock-outline{
+	margin-right: 3px;
+}
+.dashboard .coursesList,.myClass .coursesList{
+	margin-left: -3px;
+}
+.dashboard .coursesList div,.myClass .coursesList div{
+	padding: 0;
+	margin-left: 5px;
+	margin-top: 5px;
+	background: #cbcbcb;
+	width: 48%;
+	float: left;
+}
+.dashboard .coursesList div img,.myClass .coursesList div img{
+	width: 100%;
+	height: 90px;
+}
+.dashboard .coursesList span,.myClass .coursesList span{
+	display: block;
+	font-size: 12px;
+}
+
+/*内容部分结束*/
+/*=====首页结束=====*/
+
+/*=====视频播放页=====*/
+/*头部*/
+.videoPlay .info-header .ion-chevron-left:before,.result .info-header .ion-chevron-left:before,.shopCart .info-header .ion-chevron-left:before,.login .info-header .ion-chevron-left:before,.protocol .info-header .ion-chevron-left:before,.register .info-header .ion-chevron-left:before,.checkPhone .info-header .ion-chevron-left:before,.registerSuccess .info-header .ion-chevron-left:before,.orderInfo .info-header .ion-chevron-left:before,.mesCent .info-header .ion-chevron-left:before,.myClass .info-header .ion-chevron-left:before,.myOrder .info-header .ion-chevron-left:before{
+	color: #fc1739;
+	margin-right: 3px;
+	margin-top: 1px;
+}
+.videoPlay .info-header.bar .button.button-clear.icon-left:before,.result .info-header.bar .button.button-clear.icon-left:before,.shopCart .info-header.bar .button.button-clear.icon-left:before,.login .info-header.bar .button.button-clear.icon-left:before,.protocol .info-header.bar .button.button-clear.icon-left:before,.register .info-header.bar .button.button-clear.icon-left:before,.checkPhone .info-header.bar .button.button-clear.icon-left:before,.registerSuccess .info-header.bar .button.button-clear.icon-left:before,.orderInfo .info-header.bar .button.button-clear.icon-left:before,.mesCent .info-header.bar .button.button-clear.icon-left:before,.myClass .info-header.bar .button.button-clear.icon-left:before,.myOrder .info-header.bar .button.button-clear.icon-left:before{
+	font-size: 14px;
+}
+/*头部结束*/
+
+/*播放部分*/
+#myElement img{
+	width: 100%;
+	height: 250px;
+}
+.videoPlay .playList{
+	padding: 5px;
+	background: #f3f0f0;
+}
+.videoPlay .playList .video{
+	height: 180px;
+}
+.videoPlay .playList .tools{
+	background: #e6e6e6;
+	height: 30px;
+	line-height: 30px;
+}
+.videoPlay .playList .tools .ion-ios7-pause:before{
+	font-size: 18px;
+	margin-left: 5px;
+}
+
+/*播放部分结束*/
+
+.videoPlay .playList .buttons{
+	margin-left: -10px;
+	margin-bottom: 5px;
+	padding: 0 5px;
+}
+.videoPlay .playList .buttons a{
+	border: none;
+	background: #fff;
+	margin-left: 5px;
+	margin-top: 10px;
+	color: #0193de;
+}
+
+.videoPlay .playList .ask{
+	margin: 0;
+	margin-left: -5px;
+	margin-bottom: 5px;
+}
+.videoPlay .playList .ask .areaBox{
+	height: 55px;
+	overflow: auto;
+	border: 1px solid #c3c5c6;
+	-webkit-box-shadow: inset 1px 1px 4px #bbbaba;
+	-o-box-shadow: inset 1px 1px 4px #bbbaba;
+	-moz-box-shadow: inset 1px 1px 4px #bbbaba;
+	-ms-box-shadow: inset 1px 1px 4px #bbbaba;
+}
+.videoPlay .playList .ask button{
+	margin-left: 10px;
+}
+
+.videoPlay .playList .courList{
+	margin-left: -10px;
+}
+.videoPlay .playList .courList .col-50{
+	background: #cbcbcb;
+	padding: 0;
+	margin-left: 5px;
+	font-size: 12px;
+}
+/*=====视频播放页结束=====*/
+
+
+/*=====查询结果页=====*/
+.other{
+	color: #d22727;
+	font-weight: bold;
+}
+
+.result .queryResult span,.result .queryResult h2,.shopCart .settleAct h2,.shopCart .settleAct h2 span,.shopCart .settleAct .price,.myOrder .orderDetail h2,.myOrder .orderDetail h2 span,.myOrder .orderDetail .price{
+	
+	font-size: 12px;
+}
+.result .queryResult h2,.shopCart .settleAct h2,.shopCart .settleAct h2 span,.shopCart .settleAct .price,.myOrder .orderDetail h2,.myOrder .orderDetail h2 span,.myOrder .orderDetail .price{
+	color: #d22727;
+	font-weight: bold;
+}
+.result .queryResult .item,.shopCart .settleAct .item{
+	padding: 10px 10px 10px 105px;
+	min-height: 90px;
+}
+.result .queryResult h2,.shopCart .settleAct h2{
+	float: left;
+	width: 50%;
+	white-space: normal;
+}
+.result .queryResult span,.shopCart .settleAct .price{
+	float: right;
+	margin-top: -3px;
+}
+.result .queryResult .item a{
+	float: right;
+	font-size: 12px;
+	width: 38%;
+	background: #f45400;
+	border: 2px solid #e5e5e5;
+	border-radius: 20px;
+	color: #fff;
+	text-align: center;
+}
+/*=====查询结果页结束=====*/
+
+/*=====结算页=====*/
+/*头部*/
+.shopCart .info-header .button{
+	font-size: 12px;
+	color: #171717;
+}
+/*头部结束*/
+
+
+/*内容部分*/
+.shopCart .settleAct h2 span,.myOrder .orderDetail h2 span{
+	color: #565555;
+	font-weight: normal;
+}
+.shopCart .settleAct button,.myOrder .orderDetail button{
+	float: right;
+	border: none;
+	width: 50px;
+}
+.shopCart .settleAct button{
+	background: #dedddc;
+	border-radius: 3px;
+}
+.shopCart .settleAct .original,.myOrder .orderDetail .original{
+	font-size: 12px;
+	color: #d22727;
+}
+/*内容部分结束*/
+/*底部*/
+.shopCart .shopCartFoot{
+	background: #f3f3f3;
+	line-height: 44px;
+	padding: 0;
+}
+.shopCart .shopCartFoot span{
+	color: #fc1739;
+	font-weight: bold;
+}
+.shopCart .shopCartFoot a{
+	display: inline-block;
+	position: absolute;
+	right: 0;
+	padding: 0 10px 0 25px;
+	width: 80px;
+	color: #fff;
+	background: url(../img/lal.png);
+}
+.shopCart .shopCartFoot .ion-ios7-cart-outline:before{
+	padding-right: 5px;
+}
+/*底部结束*/
+
+/*=====结算页结束=====*/
+
+/*=====登录页=====*/
+.login{
+	background: url(../img/bb.png);
+}
+.login .loginCtn .scroll{
+	margin: 0 auto;
+}
+.login .loginCtn .loginBox{
+	margin-top: 120px;
+}
+.login .loginCtn .loginBox .logo{
+	display: block;
+	width: 40px;
+	height: 39px;
+	margin: 0 auto;
+	background: url(../img/user.png) no-repeat;
+}
+.login .loginCtn .loginBox label{
+	margin-top: 20px;
+	color: #dbd9d7;
+	background: #c46c18;
+	border: 1px solid #7a7a7a;
+	border-radius: 5px;
+	font-size: 12px;
+	height: 35px;
+}
+.login .loginCtn .loginBox input{
+	-webkit-flex:1 0 0;
+	-o-flex:1 0 0;
+	-ms-flex:1 0 0;
+	-moz-flex:1 0 0;
+}
+.login .loginCtn .loginBox ::-webkit-input-placeholder,.login .loginCtn .loginBox .ion-ios7-person-outline:before,.login .loginCtn .loginBox .ion-key:before { 
+	color:#dbd9d7;
+	font-size: 12px;
+}
+.login .loginCtn .loginBox .buttons{
+	margin-top: 20px;
+	margin-left: -20px;
+}
+.login .loginCtn .loginBox .buttons button,.login .loginCtn .loginBox .buttons a{
+	display: inline-block;
+	width: 40%;
+	height: 30px;
+	line-height: 30px;
+	font-size: 14px;
+	color: #fff;
+	text-align: center;
+	margin-left: 20px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#ff9858), color-stop(1, #ff632b), to(#ff632b)); 
+	background-image: -moz-linear-gradient(top, #ff9858, #ff632b);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff9858', endColorstr='#ff632b', GradientType='0'); /* IE*/
+	-webkit-box-shadow: inset -1px 1px 1px #ebe6e4;
+	-o-box-shadow: inset -1px 1px 1px #ebe6e4;
+	-ms-box-shadow: inset -1px 1px 1px #ebe6e4;
+	-moz-box-shadow: inset -1px 1px 1px #ebe6e4;
+	border: 1px solid #7a7a7a;
+	border-radius: 5px;
+}
+/*=====登录页结束=====*/
+
+/*=====注册协议页=====*/
+.protocol .protocolCtn h4{
+	text-align: center;
+}
+.protocol .protocolCtn h4,.protocol .protocolCtn h6{
+	font-weight: bold;
+}
+.protocol .protocolCtn p{
+	font-size: 12px;
+}
+.protocol .protocolFoot span{
+	margin: 0 auto;
+	color: #d22727;
+	font-size: 12px;
+}
+/*=====注册协议页结束=====*/
+
+/*=====注册页=====*/
+.register .registerCtn h4{
+	text-align: center;
+	font-weight: bold;
+	border: none;
+}
+.register .registerCtn{
+	margin: 0 auto;
+}
+.register .registerCtn .registerBox .item{
+	border: none;
+	font-size: 12px;
+}
+.register .registerCtn .input-label{
+	font-size: 12px;
+	width: 29%;
+	text-align: right;
+}
+
+.register .registerCtn .registerBox input[type='text'],.register .registerCtn input[type='date'],.register .registerCtn input[type='email'],.register .registerCtn input[type='number'],.register .registerCtn input[type='password']{
+	border: 1px solid #bdbdbd;
+	font-size: 12px;
+	width: 100px;
+	height: 25px;
+	-webkit-flex:1 0 160px;
+	-ms-flex:1 0 160px;
+	-o-flex:1 0 160px;
+	-moz-flex:1 0 160px;
+	padding: 5px;
+	border-radius: 5px;
+}
+
+.register .registerCtn .sex{
+	padding:0;
+}
+.register .registerCtn .sex span{
+	float: left;
+}
+.register .registerCtn .sex div{
+	display: inline-block;
+	margin-top: 10px;
+	margin-left: 10px;
+}
+
+.register .registerCtn button,.checkPhone .checkPhoneCtn .checkBox a{
+	display: inline-block;
+	text-align: center;
+	border: 1px solid #7a7a7a;
+	margin-top: 15px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#ff9858), color-stop(1, #ff632b), to(#ff632b)); 
+	background-image: -moz-linear-gradient(top, #ff9858, #ff632b);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff9858', endColorstr='#ff632b', GradientType='0'); /* IE*/
+	-webkit-box-shadow: inset -1px 1px 1px #ebe6e4;
+	-o-box-shadow: inset -1px 1px 1px #ebe6e4;
+	-moz-box-shadow: inset -1px 1px 1px #ebe6e4;
+	-ms-box-shadow: inset -1px 1px 1px #ebe6e4;
+	border-radius: 5px;
+	color: #fff;
+}
+/*=====注册页结束=====*/
+
+/*=====手机验证页=====*/
+.checkPhone .checkPhoneCtn{
+	margin-top: 120px;
+}
+.checkPhone .checkPhoneCtn h4{
+	text-align: center;
+	font-weight: bold;
+}
+.checkPhone .checkPhoneCtn .checkBox{
+	margin: 0 auto;
+}
+
+.checkPhone .checkPhoneCtn .checkBox label{
+	margin-top: 20px;
+	color: #dbd9d7;
+	border: 1px solid #7a7a7a;
+	border-radius: 5px;
+	font-size: 12px;
+	height: 35px;
+}
+.checkPhone .checkPhoneCtn .checkBox input{
+	flex:1 0 0;
+}
+/*=====手机验证页结束=====*/
+
+/*=====注册成功提示页=====*/
+
+.registerSuccess .registerSuccessCtn .successTip{
+	height: 90px;
+	margin:0 auto;
+	margin-top: 160px;
+	padding-left: 70px;
+	background: url(../img/alert.png) no-repeat;
+}
+.registerSuccess .registerSuccessCtn .successTip h6{
+	margin-top: 0;
+	margin-bottom: 10px;
+	font-weight: bold;
+}
+.registerSuccess .registerSuccessCtn .successTip span,.registerSuccess .registerSuccessCtn .successTip a{
+	font-size: 12px;
+}
+.registerSuccess .registerSuccessCtn .successTip a{
+	color: #d22727;
+}
+/*=====注册成功提示页结束=====*/
+
+/*=====订单信息页=====*/
+
+
+/*内容部分*/
+.orderInfo .orderInfoCtn h4{
+	font-weight: bold;
+	padding-left: 10px;
+}
+.orderInfo .orderInfoCtn h4{
+	font-size: 14px;
+	height: 30px;
+	line-height: 30px;
+	background: #e7e2e2;
+	margin-bottom: 0;
+	border-bottom: 1px solid #c0bfbf;
+}
+.orderInfo .orderInfoCtn h6{
+	height: 25px;
+	line-height: 25px;
+	border-bottom: 1px dashed #c0bfbf;
+}
+.orderInfo .orderInfoCtn .item-input{
+	border: none;
+}
+.orderInfo .orderInfoCtn .input-label{
+	font-size: 12px;
+	width: 22%;
+}
+.orderInfo .orderInfoCtn .item input[type='text']{
+	display: inline-block;
+	border: 1px solid #bdbdbd;
+	font-size: 12px;
+	width: 100px;
+	height: 25px;
+	-webkit-flex:1 0 160px;
+	-o-flex:1 0 160px;
+	-ms-flex:1 0 160px;
+	-moz-flex:1 0 160px;
+	padding: 5px;
+	border-radius: 5px; 
+}
+.orderInfo .orderInfoCtn table {
+	width: 100%;
+	border: 1px solid #bdbdbd;
+	text-align: center;
+	font-size: 12px;
+}
+.orderInfo .orderInfoCtn table .row{
+	padding: 0;
+}
+.orderInfo .orderInfoCtn table th{
+	display: inline-block;
+	background: #d4d0d0;
+	margin: 1px;
+}
+.orderInfo .orderInfoCtn .infos label img{
+	border: 2px solid #063790;
+}
+.orderInfo .orderInfoCtn .infos .item{
+	padding: 5px;
+}
+/*内容部分结束*/
+/*底部*/
+.orderInfo .orderInfoFoot{
+	background: #f3f3f3;
+	line-height: 40px;
+	font-size: 12px;
+}
+
+.orderInfo .orderInfoFoot .allPrice span{
+	font-size: 14px;
+	margin-left: 3px;
+	color: #d22727;
+	font-weight: bold;
+}
+.orderInfo .orderInfoFoot button{
+	display: inline-block;
+	position: absolute;
+	width: 80px;
+	height: 30px;
+	right: 10px;
+	top: 10px;
+	color: #fff;
+	font-size: 12px;
+	text-align: center;
+	background: #f6550e;
+	border: none;
+	
+}
+/*底部结束*/
+/*=====订单信息页结束=====*/
+
+/*=====个人中心页=====*/
+.myAccount .icon.ion-record:before{
+	font-size: 12px;
+	color:#fff;
+}
+.myAccount .icon.ion-chevron-right
+{
+	font-size:16px;
+	color:red;
+} 
+.myAccount .perCenter .slide-box img{
+	width:100%;
+	height:220px;
+}
+.myAccount .perCenter .login{
+	background: none;
+}
+.myAccount .perCenter .login-info{
+	display: inline-block;
+	position: absolute;
+	top:192px;
+	left:0;
+	width:60px;
+    line-height: 28px;
+    text-align: center;
+	background: #fff;
+	border-radius: 5px 5px 0 0;
+}
+.myAccount .perCenter .login-info span{
+	font-size: 12px;
+}
+.myAccount .detail-list{
+	display: block;
+	margin-top: -5px;
+}
+.myAccount .detail-list a{
+	display:block;
+	font-size: 14px;
+	padding:11px;
+}
+.myAccount .detail-list .btn a{
+	font-size: 16px;
+	color:red;
+	line-height:22px;
+	display: block;
+	text-align: center; 
+}
+.myAccount .detail-list .activated{
+	background: rgb(243,108,19);
+}
+/*=====个人中心页结束=====*/
+
+
+/*=====我的课程页=====*/
+.myClass .coursesList .continue,.myClass .coursesList .remove{
+	display: inline-block;
+	float: right;
+	width: 40px;
+	height: 20px;
+	line-height: 20px;
+	text-align: center;
+	color: #f2eeec;
+	background: #f6550e;
+	font-size: 12px;
+}
+.myClass .coursesList .again{
+	display: inline-block;
+	float: left;
+	width: 55px;
+	height: 20px;
+	line-height: 20px;
+	text-align: center;
+	color: #f2eeec;
+	background: #f6550e;
+	font-size: 12px;
+}
+.myClass .has-header,.myOrder .has-header,.mesCent .has-header,.dashboard .has-header{
+	top: 0;
+}
+/*=====我的课程页结束=====*/
+
+
+/*=====消息中心页=====*/
+
+.mesCent .infoTip{
+	border-top:1px solid #BF3E22;
+	font-family: 微软雅黑;
+
+}
+.myClass .infoTip,.myOrder .infoTip,.mesCent .infoTip{
+	margin-top: 44px;
+}
+.mesCent .infoTip span,.myClass .infoTip a{
+	display: inline-block;
+	width: 85%;
+	color:#000;
+}
+.mesCent .infoTip .ion-person:before,.myOrder .infoTip .ion-person:before,.myClass .infoTip .ion-person:before{
+	color:red;
+}
+
+.activaty{
+	background: -webkit-gradient(linear, left top, left bottom, from(#F1F2EC), color-stop(0.3, #E9E9E1), to(#DCD9D0));
+	-webkit-box-shadow: inset 1px 2px 4px #F6F7F1;
+}
+.mesCent .infoDetail .item .message{
+	color:red;
+	font-weight:bold;
+	font-size: 14px;
+}
+.mesCent .infoDetail .item p,.myOrder .orderDetail .item p{
+	font-size: 12px;
+}
+.mesCent .infoDetail .item p.mesCtn{
+	width: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	-webkit-text-overflow: ellipsis;
+}
+/*=====消息中心页结束=====*/
+
+
+/*=====我的订单页=====*/
+.myOrder .row,.myClass .row,.mesCent .row{
+	padding: 0;
+}
+.myOrder .infoTip a{
+	display: inline-block;
+	width: 85%;
+	color: #000;
+}
+.orderDetail .order-list .icon.ion-left.ion-chevron-down:before{
+	font-size: 16px;
+	color:#ccc;
+}
+
+.orderDetail .order-list p{
+	margin:0;
+}
+.notPay .order-list .btns{
+	margin:-22px 0 0 130px;
+}
+
+.orderDetail .order-list .btns a{
+	text-align: center;
+	display: inline-block;
+	width: 60px;
+	line-height:18px;
+    background: #F36C13;
+	border: 2px solid #e5e5e5;
+	border-radius: 10px;
+	color: #fff;
+	font-size: 10px;
+}
+.myOrder .orderDetail .item-icon-right{
+	padding-right: 30px;
+}
+.myOrder .isPay .item-icon-left{
+	padding-left: 30px;
+}
+.myOrder .orderDetail .ion-chevron-down:before{
+	float: right;
+	display: inline-block;
+	margin-top: 25px;
+}
+.myOrder .notPay .ion-chevron-down:before{
+	float: left;
+	margin-left: -35px;
+}
+.myOrder .notPay .allPrice{
+	color: #d22727;
+	font-weight: bold;
+}
+/*=====我的订单页结束=====*/
+
+
+/*=====引导页=====*/
+
+.guide .box img{
+	width:320px;
+	height:570px;
+}
+.guide .box button span{
+	display: inline-block;
+	position: absolute;
+	top:420px;
+	left:110px;
+	width:100px;
+	height:28px;
+	line-height: 28px;
+	background: #fff;
+	color:#46AEE5;
+	font-size: 12px;
+	font-weight: bold;
+	border-radius: 4px;
+}
+.guide .ion-record{
+	font-size: 12px;
+	color:#fff;
+}
+.guide .slider-pager .slider-pager-page{
+    display: inline-block;
+    position: relative;
+    top:-80px;
+    left:0px;
+    margin:0 3px;
+}
+
+/*=====引导页结束=====*/
+/* 首页课表 */
+.tabbed-slidebox .slider {
+    height: 100%;
+}
+.tabbed-slidebox.btm .slider {
+    margin-bottom: -50px;
+}
+.tabbed-slidebox .slider-slides {
+    width: 100%;
+}
+
+.tabbed-slidebox .slider-slide {
+    padding-top: 0px;
+    color: #000;
+    background-color: #fff;
+    /*text-align: center;*/
+    /*font-weight: 300;*/
+}
+
+.tabbed-slidebox .tsb-icons {
+    text-align: center;
+    /*margin: 10px 0;*/
+    /*position: relative;*/
+	background-color:#fff;
+}
+
+.tabbed-slidebox .tsb-ic-wrp {
+    display: flex;
+    position: relative;
+	-webkit-transition: -webkit-transform 0.3s; /* For Safari 3.1 to 6.0 */
+	-webkit-transform:translate3d(0,0,0);
+}
+
+.tabbed-slidebox .tsb-icons a {
+    /*display: inline-block;*/
+    width: 54px;
+    font-size: 12px;
+    color: #000;
+	-webkit-transform:translate3d(0,8px,0);
+}
+
+.tabbed-slidebox .tsb-icons a.active {
+    color: rgba(0, 0, 0, 1);
+    font-size: 12px;
+	/*-webkit-transform:translate3d(0,0,0);*/
+}
+
+.tabbed-slidebox .tabbed-slidebox {
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+}
+
+/*.tabbed-slidebox .tsb-icons:after {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 1.4em 1.4em 1.4em;
+    border-color: transparent transparent #0398dc transparent;
+    position: absolute;
+    content: "";
+    display: block;
+    bottom: -12px;
+    left: 50%;
+    margin-left: -14px;
+}*/
+.tsb-hscroll.scroll-view{
+  	white-space: nowrap;
+	margin:0 auto;
+}
+.tsb-hscroll.scroll-view .scroll-bar{
+	visibility:hidden;
+}
+.tsb-hscroll.scroll-view .scroll.onscroll{
+	-webkit-transition: -webkit-transform 0.3s; /* For Safari 3.1 to 6.0 */
+}
+
+.tabbed-slidebox .tsb-icons .scroll a{
+	width:89px;
+	text-decoration: none;
+}
+/* 首页课表结束 */
+
+
+
+/*注册验证*/
+.register input[type='text'].ng-dirty.ng-invalid, .register input.ng-dirty.ng-invalid {
+    border-color: #E53935;
+   -webkit-box-shadow: inset 0 0 4px #C50000;
+    -moz-box-shadow: 0 0 4px #C50000;
+    box-shadow:inset 0 0 4px #C50000;
+}
+
+ .register .help-block,  .register .has-error{
+	color:#B94A48;
+}
+.register .registerCtn .help-block{
+	font-size:10px;
+	display: block;
+	width:250px;
+ 	height:25px;
+ 	margin: 0 auto;
+ 	padding-left: 70px;
+ 	word-break: break-all;
+ 	word-wrap:break-word;
+}
+
+
+.login .error{
+	margin-top:5px;
+}

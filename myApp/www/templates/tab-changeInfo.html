@@ -1,0 +1,55 @@
+<ion-view class='register'>
+	<ion-header-bar align-title="center" class="info-header">
+        <div class="buttons">
+            <a class="button icon-left ion-chevron-left button-clear button-dark button-self" onclick="javascript:history.back();"><span>返回</span></a>
+
+        </div>
+        <h1 class="title">修改信息</h1>
+    </ion-header-bar>
+    <ion-content class='registerCtn'>
+        <h4>修改用户信息</h4>
+        <div class="col col-77 registerBox">
+            <form name="userForm" ng-submit="change(userData)" novalidate>
+            	<div class="item item-input">
+            		<span class='input-label'>用户名:</span>
+            		<input type="text" required ng-model='userData.account' ng-pattern="/^[a-zA-Z][a-zA-Z0-9_]+$/"  ng-minlength="3" ng-maxlength="8" >
+            	</div>
+                <div class="error" ng-show="userForm.username.$dirty && userForm.username.$invalid">
+                    <small ng-show="userForm.username.$error.required" class="help-block">用户名不能为空.</small>
+                    <small ng-show="userForm.username.$error.minlength || userForm.username.$error.maxlength" class="help-block">用户名由3-8个字符组成</small>
+                    <small ng-show="userForm.username.$error.pattern" class="help-block">由字母、数字、下划线组成.</small>
+                </div>
+            	<div class="item item-input">
+            		<span class='input-label'>真实姓名:</span>
+            		<input type="text"ng-model='userData.realName'>
+            	</div>
+            	<div class="item sex">
+            		<span class='input-label'>性别:</span>
+            		<div class="sexInput">
+    	        		<input type="radio" name="sex" value='0' checked="{{sex}}==0" ng-model='userData.sex'>男
+    	        		<input type="radio" name="sex" value='1' checked="{{sex}}==1" ng-model='userData.sex'>女
+            		</div>
+            	</div>
+            	<div class="item item-input">
+            		<span class='input-label'>出生年月:</span>
+            		<input type="date" ng-model='userData.birthday' date-picker select="updateMyText(date)">
+            	</div>
+            	<div class="item item-input">
+            		<span class='input-label'>手机号码:</span>
+            		<input type="text" ng-model='userData.phoneNumber' ng-pattern=/^[0-9-+]+$/>
+            	</div>
+            	<div class="item item-input">
+            		<span class='input-label'>电子邮箱:</span>
+            		<input type="email" ng-model='userData.email'>
+            	</div>
+            	<div class="item item-input">
+            		<span class='input-label'>QQ号码:</span>
+            		<input type="text" ng-model='userData.qqNumber' ng-pattern="/^[0-9]+$/">
+            	</div>
+                <br>
+                <br>
+            	<button type="submit" class="col col-80 col-offset-10" ng-disabled="!userForm.$valid">修改</button>
+            <form>
+        </div>
+    </ion-content>
+</ion-view>
